@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="src/styles.css" />
     <title>Recipes</title>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -19,6 +20,7 @@
       <main>
         <form id="recipe-generator-form">
           <input
+            id="user-instructions"
             class="input"
             type="text"
             placeholder="Create recipe for....(i.e chicken stew)"
@@ -28,9 +30,7 @@
           />
           <input class="submit-button" type="submit" />
         </form>
-        <div class="recipes" id="recipe">
-          chicken stew recipes:chicken, chicken spice, paprika....
-        </div>
+        <div class="recipes" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by
