@@ -12,28 +12,31 @@ a {
 }
 
 .container {
-  margin: 120px auto;
+  margin: 100px auto;
   max-width: 800px;
 }
 
 header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h1 {
   text-align: center;
-  font-weight: 800;
-  font-size: 36px;
+  font-weight: bold;
+  font-size: 40px;
   line-height: 1.5;
   color: #272044;
 }
-
 form {
+  display: flex;
+}
+
+.form-container {
   padding: 30px;
   background-color: white;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
-  display: flex;
+
   margin-bottom: 30px;
 }
 
@@ -70,9 +73,26 @@ form {
   color: hsl(303, 100%, 60%);
   font-style: italic;
 }
+.hidden {
+  display: none;
+}
 
 footer {
   text-align: center;
   font-size: 14px;
-  margin-top: 30px;
+  margin-top: 40px;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

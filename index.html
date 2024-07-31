@@ -13,24 +13,27 @@
       <header>
         <h1>Meet your personal AI-Powered-Kitchen assistant😋</h1>
         <p>
-          Simply type a recipe idea or some ingredients you have on hand and
-          Netshedzo's AI will instantly generate the recipe for you...
+          Simply type a anything you need a recipe ideas for or some ingredients
+          you have on hand and Netshedzo's AI will instantly generate the recipe
+          for you...
         </p>
       </header>
       <main>
-        <form id="recipe-generator-form">
-          <input
-            id="user-instructions"
-            class="input"
-            type="text"
-            placeholder="Create recipe for....(i.e chicken stew)"
-            autofocus
-            required
-            autocomplete="off"
-          />
-          <input class="submit-button" type="submit" />
-        </form>
-        <div class="recipes" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              id="user-instructions"
+              class="input"
+              type="text"
+              placeholder="Create recipe for....(i.e chicken stew)"
+              autofocus
+              required
+              autocomplete="off"
+            />
+            <input class="submit-button" type="submit" />
+          </form>
+        </div>
+        <div class="recipes hidden" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by
